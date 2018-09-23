@@ -16,11 +16,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Method called when the user tap the button
+     * @param view 
+     */
     public void sendMessage(View view) {
         Intent intent = new Intent(this, GreetingActivity.class);
         EditText editText = (EditText) findViewById(R.id.mainName);
         String message = "Hello "+ editText.getText().toString()+"!";
-        //String message = "Hello !";
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
 
