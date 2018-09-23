@@ -16,9 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /**
-     * Method called when the user tap the button
-     * @param view 
+    /** Method called when the user tap the button
+     * @param view the current view
      */
     public void sendMessage(View view) {
         Intent intent = new Intent(this, GreetingActivity.class);
